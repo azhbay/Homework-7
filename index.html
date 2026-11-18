@@ -24,8 +24,8 @@
     <h2>Эксперимент 2: наследование</h2>
 
     <div class="parent">
-        <p>Этот текст демонстрирует наследование цвета.</p>
-    </div>
+    <p>Этот текст наследует цвет от родительского элемента.</p>
+</div>
 <h2>Результаты эксперимента</h2>
 
 <section>
@@ -37,7 +37,7 @@
         поскольку уступают ему по приоритету.
     </p>
     <img src="images/Experiment_1.jpg"
-         alt="Проверка трёх CSS-селекторов в DevTools">
+         alt="CSS-selectors checking through DevTools">
 </section>
 
 <section>
@@ -48,7 +48,7 @@
         Каждому правилу задан свой цвет текста.
     </p>
     <img src="images/Experiment_2.jpg"
-         alt="Исходный CSS-код с тремя селекторами">
+         alt="Original CSS code with three selectors">
 </section>
 
 <section>
@@ -59,18 +59,16 @@
         а правило p осталось перечёркнутым.
     </p>
     <img src="images/Experiment_3.jpg"
-         alt="Результат проверки специфичности после удаления ID">
+         alt="Result of specificity check after removing ID rule">
 </section>
 
 <section>
-    <h3>Скриншот 4. CSS-код после изменения</h3>
+    <h3>Скриншот 4. Элемент .parent после изменения</h3>
     <p>
-        На изображении показан CSS-код после удаления правила #hint.
-        Остались два селектора: .note и p. Класс .note имеет
-        более высокую специфичность, чем селектор тега p.
+       В третьей части эксперимента проверила наследование CSS-свойства color. Родительскому элементу .parent задала цвет purple, а для вложенного абзаца p использовала правило .parent p { color: inherit; }. Значение inherit указывает браузеру наследовать цвет от родительского элемента. В результате текст абзаца стал фиолетовым, несмотря на общее правило p { color: black; }. Проверка через Chrome DevTools во вкладке Computed подтвердила результат.
     </p>
     <img src="images/Experiment_4.jpg"
-         alt="CSS-код с закомментированным правилом hint">
+         alt="CSS-code for parent element">
 </section>
 
 

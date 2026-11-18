@@ -14,7 +14,9 @@ p {
 .parent {
     color: purple;
 }
-
+.parent p {
+    color: inherit;
+}
 
 section img {
     display: block;
