@@ -1,0 +1,27 @@
+
+p {
+    color: black;
+}
+
+.note {
+    color: blue;
+}
+
+#hint {
+    color: green;
+}
+
+.parent {
+    color: purple;
+}
+
+
+section img {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 15px 0 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
